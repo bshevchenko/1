@@ -11,19 +11,22 @@
 	bluebird 
 	koa.js
 
-	migrations
-		первоначальные данные
-	test
-		mocha
+migrations:
+	первоначальные данные
+test:
+	mocha
 		
-	либы: moment.js, lodash.js
+либы:
+	moment.js
+	lodash.js
 
 db:
 	mysql
 
 фронт: 
 	ES6 + react + bootstrap + nv-d3.js + webpack (require style) + babel
-репы: только npm
+репы:
+	только npm
 
 
 # Interface
