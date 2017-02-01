@@ -5,10 +5,10 @@
 
 
 бекенд: 
-	ES6 
-	generators 
-	coroutines  
-	bluebird 
+	ES6
+	generators
+	coroutines
+	bluebird
 	koa.js
 
 migrations:
