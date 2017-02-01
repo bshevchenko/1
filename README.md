@@ -13,6 +13,7 @@
 
 migrations:
 	первоначальные данные
+
 test:
 	mocha
 		
@@ -25,6 +26,7 @@ db:
 
 фронт: 
 	ES6 + react + bootstrap + nv-d3.js + webpack (require style) + babel
+
 репы:
 	только npm
 
