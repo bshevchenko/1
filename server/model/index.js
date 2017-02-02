@@ -2,7 +2,7 @@ import sequelize  from 'sequelize';
 
 var db = new sequelize('postgres://postgres@localhost:5432/1', {
 	dialect: 'postgres',
-	// logging: false
+	logging: console.log
 });
 
 db.import('./department');
