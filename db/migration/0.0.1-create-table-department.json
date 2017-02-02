@@ -1,0 +1,82 @@
+{
+    "databaseChangeLog": [
+        {
+            "changeSet": {
+                "id": "0.0.1-create-table-department",
+                "author": "sargonpiraev",
+                "context": "production, development",
+                "changes": [
+                    {
+                        "createTable": {
+                            "tableName": "department",
+                            "columns": [
+                                {
+                                    "column": {
+                                        "name": "id",
+                                        "type": "integer",
+                                        "autoIncrement": true,
+                                        "constraints": {
+                                            "primaryKey": true,
+                                            "nullable": false
+                                        },
+                                    }
+                                },
+                                {
+                                    "column": {
+                                        "name": "name",
+                                        "type": "text",
+                                        "constraints": {
+                                            "unique": true,
+                                            "nullable": false
+                                        },
+                                    }
+                                },
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+
+        {
+            "changeSet": {
+                "id": "table-department-seed",
+                "author": "sargonpiraev",
+                "context": "development",
+                "changes": [
+                    {
+                        "insert": {
+                            "tableName": "department",
+                            "columns": [
+                                {
+                                    "column": {
+                                        "name": "name",
+                                        "value": "Marketing"
+                                    }
+                                },
+                                {
+                                    "column": {
+                                        "name": "name",
+                                        "value": "Support"
+                                    }
+                                },
+                                {
+                                    "column": {
+                                        "name": "name",
+                                        "value": "Accounting"
+                                    }
+                                },
+                                {
+                                    "column": {
+                                        "name": "name",
+                                        "value": "General Administrative"
+                                    }
+                                }
+                           ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
